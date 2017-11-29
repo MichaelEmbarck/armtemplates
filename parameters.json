@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westeurope"
+        },
+        "virtualMachineName": {
+            "value": "splunkshead1-vm-core-wr"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS12_v2_Promo"
+        },
+        "adminUsername": {
+            "value": "wrproslkadmin"
+        },
+        "virtualNetworkName": {
+            "value": "eurw-core-vnt-01"
+        },
+        "networkInterfaceName": {
+            "value": "splunkshead-nic1-core-wr"
+        },
+        "networkSecurityGroupName": {
+            "value": "nsg01-core-eurw-public"
+        },
+        "adminPassword": {
+            "value": "6L7W8667Nb96"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "slkcorediag01"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/slkdevdiag01"
+        },
+        "addressPrefix": {
+            "value": "10.16.0.0/16"
+        },
+        "subnetName": {
+            "value": "core-public"
+        },
+        "subnetPrefix": {
+            "value": "10.16.18.0/23"
+        },
+        "publicIpAddressName": {
+            "value": "splunkshead1-pip-core-wr"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
